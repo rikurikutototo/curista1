@@ -1,0 +1,105 @@
+header {
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    background-image: url(../img/contact-page-bgi@2x.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+header .header-wrapper {
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header .header-wrapper .header-nav {
+    display: flex;
+    margin-top: 30px;
+    padding-right: 80px;
+}
+
+header .header-wrapper .header-nav li {
+  margin-right: 30px;
+  height: 40px;
+}
+
+header .header-wrapper .header-nav li:hover {
+  border-bottom: 1px solid #fff;
+}
+
+header .header-wrapper .header-nav li a {
+  color: #fff;
+}
+
+.contact-title {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 60px;
+  font-style: Bold italic;
+}
+
+#contact-main {
+    height: 880px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.contact-write  {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  height: 79px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  font-style: bold;
+  margin-top: 40px;
+}
+
+footer .second-title {
+  color: #888585;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px)  {
+
+    header {
+      height: 500px;
+    }
+
+    .contact-title {
+      padding: 0;
+    }
+
+    #contact-main {
+      width: 70%;
+    }
+
+    .header-nav li {
+      display: none;
+    }
+
+    .contact-title {
+      padding-top: 180px;
+    }
+
+
+
+    
+}
+
+
+

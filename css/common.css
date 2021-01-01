@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 50;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* スクロールしたときのheaderにつくクラス */
+.active {
+    background-color: #282F35;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.second-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* セクションの左のタイトル */
+.section-left-title {
+    font-size: 60px;
+    color: #282F35;
+    display: flex;
+    align-items: center;
+}
+
+.section-left-title:after {
+    content: "";
+    height: 4px;
+    width: 200px;
+    display: block;
+    background: #000000;
+    margin-left:30px;
+}
+
+/* セクション右のタイトル */
+.section-right-title {
+    color: #fff;
+    font-size: 60px;
+    padding-top: 60px;
+    float: right;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.section-right-title:after {
+    content: '';
+    height: 4px;
+    width: 200px;
+    display: block;
+    background: #fff;
+    margin-left: 30px;
+
+}
+
+/* セクションの下の左右のタイトル */
+.second-right-title {
+    font-size: 90px;
+    margin-top: 70px;
+    color: #e7e7e7;
+    font-style: bold;
+    float: right;
+}
+
+.second-left-title {
+    font-size: 90px;
+    margin-top: 70px;
+    color: #616264;
+    font-style: bold;
+}
+
+/* 隠れメニュー */
+.hide-menu {
+    height: 800px;
+    width: 100%;
+    background-color: #707070;
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+/* 隠す */
+.disappear {
+    opacity: 0;
+}
+
+/* ドロワー */
+.hambarger {
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b11b1b;
+}
+
+/* float解除 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}   
+
+/* ボタン */
+.btn {
+    width: 235px;
+    height: 59px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    background-color: #F7D43F;
+    border-radius: 60px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #d4b217;
+}
+
+@media screen and (max-width:768px) {
+
+    .second-right-title {
+        font-size: 40px;
+    }
+
+    .second-left-title {
+        font-size: 40px;
+    }
+
+    /* セクション左タイトル */
+    .section-right-title {
+        font-size: 30px;
+    }
+
+    .section-right-title:after {
+        width: 100px;
+    }
+
+    /* セクション右タイトル */
+    .section-left-title {
+        font-size: 30px;
+    }
+
+    .section-left-title::after {
+        width: 100px;
+    }
+}
+
